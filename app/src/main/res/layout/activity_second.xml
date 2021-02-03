@@ -54,7 +54,11 @@
         android:layout_margin="30dp"
         android:textSize="15dp"/>
 
-
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_1"
+            android:background="@drawable/border_spinner">
 
     <Spinner
         android:layout_below="@id/from_currency"
@@ -63,14 +67,21 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+
+
     <TextView
         android:id="@+id/to_currency"
-        android:layout_below="@+id/converter_from"
+        android:layout_below="@+id/spinner_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To Currency"
         android:layout_margin="30dp"
         android:textSize="15dp"/>
+
+
+
+
     <Spinner
         android:id="@+id/converter_to"
         android:layout_width="250dp"
